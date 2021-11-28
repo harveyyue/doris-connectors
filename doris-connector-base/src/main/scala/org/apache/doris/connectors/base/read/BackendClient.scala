@@ -54,7 +54,7 @@ class BackendClient(routing: Routing, dorisConfig: DorisConfiguration) {
    *
    * @param openParams thrift struct to required by request
    * @return scan open result
-   * @throws ConnectedFailedException throw if cannot connect to Doris BE
+   * @throws DorisException throw if cannot connect to Doris BE
    */
   def openScanner(openParams: TScanOpenParams): TScanOpenResult = {
     LOG.debug(s"OpenScanner to '$routing', parameter is '$openParams'.")
@@ -76,7 +76,7 @@ class BackendClient(routing: Routing, dorisConfig: DorisConfiguration) {
    *
    * @param nextBatchParams thrift struct to required by request
    * @return scan batch result
-   * @throws ConnectedFailedException throw if cannot connect to Doris BE
+   * @throws DorisException throw if cannot connect to Doris BE
    */
   def getNext(nextBatchParams: TScanNextBatchParams): TScanBatchResult = {
     LOG.debug(s"GetNext to '$routing', parameter is '$nextBatchParams'.")

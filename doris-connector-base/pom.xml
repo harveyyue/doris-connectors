@@ -30,7 +30,7 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>doris-connector-base</artifactId>
+    <artifactId>doris-connector-base_${scala.binary.version}</artifactId>
     <name>Doris : Connector: Base</name>
 
     <dependencies>

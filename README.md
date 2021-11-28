@@ -29,11 +29,11 @@ and improve sink performance with flink streaming/batch side.
  Depend on doris-fe-common module to read data through thrift service, need to pre-build [Apache Doris FE](https://github.com/apache/incubator-doris/tree/master/fe).
 ### 2.1 Scala-2.11
 ```bash
-mvn clean install -DskipTests
+mvn clean install -DskipTests -Pscala-2.11
 ``` 
 ### 2.2 Scala-2.12
 ```bash
-mvn clean install -DskipTests -PScala-2.12
+mvn clean install -DskipTests
 ``` 
 
 ## 3. Maven projects
