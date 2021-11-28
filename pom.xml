@@ -110,6 +110,7 @@
                 <configuration>
                     <args>
                         <arg>-feature</arg>
+                        <arg>-nobootcp</arg>
                     </args>
                 </configuration>
             </plugin>
